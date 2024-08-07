@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A brief description of your webpage" />
+  <meta name="author" content="Your Name" />
+  <title>Index</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Unitarian Universalist Church of Savannah</h1>
+    <div>
+      <ul role="navigation">
+        <li>Menu</li>
+        <li>Upcoming Events</li>
+        <li>Calendar</li>
+        <li>Contact</li>
+      </ul>
+      <div aria-label="socials">
+        <img class="facebook" />
+        <img class="instagram" />
+      </div>
+      <a>Donate</a>
+    </div>
+  </header>
+  <section class="hero"></section>
+</body>
+<script>
+  const header = document.querySelector("header");
+
+  function checkWidth() {
+    const screenWidth = window.innerWidth;
+    const ul = document.querySelector("header ul");
+
+    if (screenWidth < 750) {
+      var toggle = document.createElement("input");
+      toggle.setAttribute("id", "toggle");
+      toggle.setAttribute("type", "checkbox");
+      header.appendChild(toggle);
+      header.appendChild(createHamburgerMenu());
+    } else {
+      const toggle = document.getElementById("toggle");
+      if (toggle) {
+        toggle.remove();
+      }
+    }
+  }
+
+  function createHamburgerMenu() {
+    var label = document.createElement("label");
+    label.setAttribute("for", "toggle");
+    label.classList.add("hamburger");
+
+    for (var i = 1; i <= 3; i++) {
+      var bar = document.createElement("div");
+      bar.classList.add("bar" + i);
+      label.appendChild(bar);
+    }
+
+    toggle.addEventListener("change", function () {
+      const nav = document.querySelector("nav");
+      if (this.checked) {
+        nav.style.top = "0";
+        nav.style.transform = "scale(1)";
+      } else {
+        nav.style.top = "-100%";
+        nav.style.transform = "scale(0)";
+      }
+    });
+    return label;
+  }
+
+  checkWidth();
+</script>
+
+</html>
