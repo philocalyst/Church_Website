@@ -31,6 +31,7 @@ ul {
 }
 
 header {
+  max-height: 15%;
   position: absolute;
   padding: 2em;
   background: linear-gradient(to bottom,
@@ -53,6 +54,45 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .one {
+  top: 20%;
+  left: 5%;
+  font-weight: 600;
+}
+
+.hero .one,
+.hero .three {
+  position: absolute;
+  line-height: 200%;
+  background: rgb(13 11 38 / 55%);
+  color: white;
+  font-size: 1.7rem;
+  width: 35%;
+  padding: 1em;
+}
+
+.hero .three {
+  box-shadow: -36px -38px 0px #f5f5f5c9;
+  bottom: 20%;
+  left: 10%;
+  color: black;
+  background-color: whitesmoke;
+  border: 0.1em solid rgb(13 11 38);
+}
+
+.hero a {
+  color: black;
+  background-color: whitesmoke;
+  border: 0.1em solid rgb(13 11 38);
+  position: absolute;
+  top: 45%;
+  right: 0;
 }
 
 ul {
