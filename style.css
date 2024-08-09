@@ -11,6 +11,10 @@
   font-weight: medium;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 img {
   width: 100%;
 }
@@ -28,17 +32,11 @@ h1 {
   margin-right: auto;
 }
 
-p > a {
-  font-weight: bold;
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  color: var(--primary_color);
-}
-
-section[aria-label="We welcome all"] {
-  padding-bottom: 9vh;
+section[aria-label="Expectations"] img {
+  width: 55%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
 }
 
 section[aria-label="What we're known for"] a {
@@ -50,14 +48,28 @@ section[aria-label="Expectations"] h2 {
   text-align: center;
 }
 
+body {
+  background-color: rgb(215, 223, 216);
+}
+
 section[aria-label="We welcome all"],
+section[aria-label="Weddings"],
 section[aria-label="What we're known for"],
 section[aria-label="Expectations"],
 section[aria-label="Our Principles"] {
   overflow: hidden;
-  background-color: rgb(215, 223, 216);
   font-weight: 300;
-  padding: 5vh 5%;
+  margin: 5vh 5%;
+}
+
+section[aria-label="We welcome all"] a:not(p a),
+section[aria-label="What we're known for"] a:not(p a),
+section[aria-label="Expectations"] a:not(p a),
+section[aria-label="Our Principles"] a:not(p a) {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.7rem 5em;
 }
 
 li {
@@ -72,12 +84,14 @@ h2 {
   color: var(--primary_color);
 }
 
-section[aria-label="Expectations"] h2 {
+section[aria-label="Expectations"] h2,
+figcaption h2 {
   font-weight: bold;
   color: var(--accent-color);
 }
 
-section[aria-label="Expectations"] a {
+section[aria-label="Expectations"] a,
+figcaption a {
   background-color: var(--accent-color);
 }
 
@@ -145,6 +159,16 @@ header {
   height: 100vh;
 }
 
+body p > a {
+  display: initial;
+  font-weight: bold;
+  background: none !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--primary_color);
+}
+
 .hero {
   position: relative;
 }
@@ -209,7 +233,13 @@ a {
   border: solid 4px white;
   border-radius: 7px;
   background-color: rgb(134, 172, 137);
-  margin-left: 1em;
+}
+
+figcaption a {
+  width: fit-content;
+  display: block;
+  margin-top: 3%;
+  border: none;
 }
 
 @media (max-width: 600px) {
@@ -279,4 +309,47 @@ a {
 #toggle:checked .hamburger nav {
   top: 0;
   transform: scale(1);
+}
+
+[aria-label="Religious Education"] figure {
+  display: flex;
+  align-items: flex-start;
+}
+
+[aria-label="Religious Education"] img {
+  width: 75%;
+  object-fit: contain;
+}
+
+[aria-label="Religious Education"] figcaption {
+  margin-top: 2em;
+  padding: 2em;
+  translate: -40%;
+  background-color: whitesmoke;
+}
+
+figcaption > p {
+  font-size: calc(1.2rem + 0.1vw);
+  width: 30vw;
+  font-weight: 300;
+}
+
+figcaption > h2 {
+  font-weight: 500;
+}
+
+section[aria-label="Weddings"] h2,
+figcaption > h2 {
+  font-size: calc(2.8vw + 1rem);
+}
+
+section[aria-label="Weddings"] h2 {
+  color: var(--accent-color);
+  text-align: center;
+}
+
+section[aria-label="Weddings"] a {
+  margin: 2% auto;
+  display: block;
+  width: fit-content;
 }
