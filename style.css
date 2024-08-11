@@ -11,6 +11,50 @@
   font-weight: medium;
 }
 
+footer {
+  padding: 5vh 5%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+footer .left {
+  max-width: 40ch;
+}
+
+footer hr {
+  margin: 5vh 0;
+}
+
+footer .right {
+  max-width: 60ch;
+}
+
+footer strong {
+  font-weight: 300;
+}
+
+footer h3 {
+  font-weight: 500;
+}
+
+footer ul {
+  max-width: initial;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer a {
+  all: unset;
+}
+
 p {
   font-size: 1.2rem;
 }
