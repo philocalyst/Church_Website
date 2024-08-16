@@ -13,9 +13,33 @@
   <body>
     <header>
       <h1>Unitarian Universalist Church of Savannah</h1>
-      <div>
+      <div class="menu-container">
         <ul role="navigation">
-          <li>Menu</li>
+          <li><button>Menu</button></li>
+          <div class="popup">
+            <a href="/subpages/leadership.html"> Leadership </a>
+
+            <a href="subpages/sunday_morning.html"> Sunday Morning </a>
+
+            <a href="subpages/upcoming_events.html"> Upcoming Events </a>
+
+            <a href="subpages/newsletter.html"> Newsletter </a>
+
+            <a href="subpages/religious_education.html">
+              Religious Education
+            </a>
+
+            <a href="subpages/make_a_difference.html"> Make a Difference </a>
+
+            <a href="subpages/weddings_and_rentals.html">
+              Weddings and Rentals
+            </a>
+
+            <a href="subpages/membersarea.html"> Members Area </a>
+
+            <a href="subpages/photogallery.html"> Photo Gallery </a>
+          </div>
+
           <li>Upcoming Events</li>
           <li>Calendar</li>
           <li>Contact</li>
@@ -287,7 +311,7 @@
       }
 
       toggle.addEventListener("change", function () {
-        const nav = document.querySelector("nav");
+        const nav = document.querySelector(".menu-container");
         if (this.checked) {
           nav.style.top = "0";
           nav.style.transform = "scale(1)";
@@ -298,6 +322,7 @@
       });
       return label;
     }
+    console.log("hi");
 
     checkWidth();
   </script>

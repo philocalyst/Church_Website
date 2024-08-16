@@ -1,0 +1,24 @@
+main>h1 {
+  font-size: calc(2.8vw + 1rem);
+  margin: 25% auto 1em auto;
+  text-align: center;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  margin: 5vh 5%;
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin: 2% auto;
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: calc(2vw + 1rem);
+}
