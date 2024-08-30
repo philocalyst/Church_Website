@@ -1,143 +1,148 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primary_color: hsla(125.71428571, 96.55172414%, 34.11764706%, 1);
-  --secondary_color: rgb(215, 223, 216);
-  --accent-color: rgb(37, 53, 81);
+	--primary_color: hsla(125.71428571, 96.55172414%, 34.11764706%, 1);
+	--secondary_color: rgb(215, 223, 216);
+	--accent-color: rgb(37, 53, 81);
 }
 
 * {
-  font-family: "Poppins";
-  font-weight: medium;
+	font-family: "Poppins";
+	font-weight: medium;
 }
 
 footer {
-  padding: 5vh 5%;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5%;
+	padding: 5vh 5%;
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5%;
 }
 
 footer .left {
-  margin-right: auto;
-  max-width: 40ch;
+	margin-right: auto;
+	max-width: 40ch;
 }
 
-header > div {
-  position: relative;
+header>div {
+	position: relative;
 }
 
 .popup a {
-  all: unset;
+	all: unset;
 }
 
 .popup {
-  isolation: isolate;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: whitesmoke;
-  padding: 0.5em 1em;
-  text-align: right;
-  min-width: 200px;
-  z-index: 10;
-  opacity: 0;
-  /* Initially hidden */
-  visibility: hidden;
-  /* Ensure it's not visible */
-  transition: opacity 0.3s ease-in-out;
-  /* Optional smooth transition */
-  top: 3em;
-  transform: translateX(-60%);
-  /* Adjust position relative to the button */
-  right: 0;
-  /* Align right */
+	isolation: isolate;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: whitesmoke;
+	padding: 0.5em 1em;
+	text-align: right;
+	min-width: 200px;
+	z-index: 10;
+	opacity: 0;
+	/* Initially hidden */
+	visibility: hidden;
+	/* Ensure it's not visible */
+	transition: opacity 0.3s ease-in-out;
+	/* Optional smooth transition */
+	top: 3em;
+	transform: translateX(-60%);
+	/* Adjust position relative to the button */
+	right: 0;
+	/* Align right */
 }
 
-.menu-container:hover .popup,
-.menu-container:focus-within .popup {
-  opacity: 1;
-  /* Show the popup */
-  visibility: visible;
-  /* Ensure it's visible */
+#menu:hover .popup {
+	opacity: 1;
+	/* Show the popup */
+	visibility: visible;
+	/* Ensure it's visible */
+}
+
+#menu .popup:hover {
+	opacity: 1;
+	/* Show the popup */
+	visibility: visible;
 }
 
 button {
-  all: unset;
+	all: unset;
 }
 
 footer hr {
-  margin: 5vh 0;
+	margin: 5vh 0;
 }
 
 footer .right {
-  max-width: 60ch;
+	max-width: 60ch;
 }
 
 footer strong {
-  font-weight: 300;
+	font-weight: 300;
 }
 
 footer h3 {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 footer ul {
-  max-width: initial;
-  display: block;
-  margin: 0;
-  padding: 0;
+	max-width: initial;
+	display: block;
+	margin: 0;
+	padding: 0;
 }
 
 footer li {
-  display: inline-block;
+	display: inline-block;
 }
 
 footer a {
-  all: unset;
+	all: unset;
 }
 
 p {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 h1 {
-  margin: 0;
-  padding: 0;
-  flex-basis: 70%;
-  font-size: calc(1.6vw + 1rem);
-  font-weight: 500;
-  margin-right: auto;
+	margin: 0;
+	padding: 0;
+	flex-basis: 70%;
+	font-size: calc(1.6vw + 1rem);
+	font-weight: 500;
+	margin-right: auto;
 }
 
 section[aria-label="Expectations"] img {
-  width: 55%;
-  margin: 0 auto;
-  display: block;
-  position: relative;
+	width: 55%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
 }
 
 section[aria-label="What we're known for"] a {
-  margin-top: 5rem;
+	margin-top: 5rem;
 }
 
 section[aria-label="We welcome all"],
 section[aria-label="Expectations"] h2 {
-  text-align: center;
+	text-align: center;
 }
 
 body {
-  background-color: rgb(215, 223, 216);
+	background-color: rgb(215, 223, 216);
 }
 
 section[aria-label="We welcome all"],
@@ -145,332 +150,421 @@ section[aria-label="Weddings"],
 section[aria-label="What we're known for"],
 section[aria-label="Expectations"],
 section[aria-label="Our Principles"] {
-  overflow: hidden;
-  font-weight: 300;
-  margin: 5vh 5%;
+	overflow: hidden;
+	font-weight: 300;
+	margin: 5vh 5%;
 }
 
 section[aria-label="We welcome all"] a:not(p a),
 section[aria-label="What we're known for"] a:not(p a),
 section[aria-label="Expectations"] a:not(p a),
 section[aria-label="Our Principles"] a:not(p a) {
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 0.7rem 5em;
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 li {
-  margin: 0.3em 0.8em;
-  font-weight: 300;
+	padding: 0.3em 0.8em;
+	font-weight: 300;
 }
 
 h2 {
-  font-size: calc(1.6vw + 1rem);
-  margin: 0;
-  font-weight: 500;
-  color: var(--primary_color);
+	font-size: calc(1.6vw + 1rem);
+	margin: 0;
+	font-weight: 500;
+	color: var(--primary_color);
 }
 
 section[aria-label="Expectations"] h2,
 figcaption h2 {
-  font-weight: bold;
-  color: var(--accent-color);
+	font-weight: bold;
+	color: var(--accent-color);
 }
 
 section[aria-label="Expectations"] a,
 figcaption a {
-  background-color: var(--accent-color);
+	background-color: var(--accent-color);
 }
 
 .greetings {
-  display: grid;
-  text-align: left;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3%;
-  grid-template-rows: calc(1.6vw + 1rem * 4) 1fr;
+	display: grid;
+	text-align: left;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 3%;
+	grid-template-rows: calc(1.6vw + 1rem * 4) 1fr;
 }
 
-.greetings > img {
-  width: 100%;
-  object-fit: fill;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  /* Span across both rows */
+.greetings>img {
+	width: 100%;
+	object-fit: fill;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+	/* Span across both rows */
 }
 
-.greetings > h2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  /* Occupy the first row in the second column */
+.greetings>h2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	/* Occupy the first row in the second column */
 }
 
-.greetings > p {
-  font-weight: 300;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  /* Occupy the second row in the second column */
+.greetings>p {
+	font-weight: 300;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	/* Occupy the second row in the second column */
 }
 
 header,
 ul {
-  display: flex;
-  align-items: center;
-  padding: 0 2%;
+	display: flex;
+	align-items: center;
+	padding: 0 2%;
 }
 
 header {
-  top: 0;
-  max-height: 15%;
-  position: absolute;
-  padding: 2em;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.5) 70%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  mask-image: linear-gradient(to bottom, black 0%, black 90%, transparent 100%);
-  backdrop-filter: blur(2px);
-  z-index: 1;
-  isolation: isolate;
+	top: 0;
+	max-height: 15%;
+	position: absolute;
+	padding: 2em;
+	background: linear-gradient(to bottom,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.5) 70%,
+			rgba(255, 255, 255, 0.1) 100%);
+	backdrop-filter: blur(2px);
+	z-index: 1;
+	isolation: isolate;
 }
 
 .hero {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/1594608449414-VNG45HFBZ6T6WH9C9LCT/IMG_20200712_130130.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/1594608449414-VNG45HFBZ6T6WH9C9LCT/IMG_20200712_130130.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
 }
 
-body p > a {
-  display: initial;
-  font-weight: bold;
-  background: none !important;
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  color: var(--primary_color);
+body p>a {
+	display: initial;
+	font-weight: bold;
+	background: none !important;
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: var(--primary_color);
 }
 
 .hero {
-  position: relative;
+	position: relative;
 }
 
 .hero .one {
-  top: 20%;
-  left: 5%;
-  font-weight: 600;
+	top: 20%;
+	left: 5%;
+	font-weight: 600;
 }
 
 .hero .one,
 .hero .three {
-  position: absolute;
-  line-height: 200%;
-  background: rgb(13 11 38 / 55%);
-  color: white;
-  font-size: 1.7rem;
-  width: 35%;
-  padding: 1em;
+	position: absolute;
+	line-height: 200%;
+	background: rgb(13 11 38 / 55%);
+	color: white;
+	font-size: 1.7rem;
+	width: 35%;
+	padding: 1em;
 }
 
 .hero .three {
-  box-shadow: -36px -38px 0px #f5f5f5c9;
-  bottom: 10%;
-  left: 10%;
-  color: black;
-  background-color: whitesmoke;
-  border: 0.1em solid rgb(13 11 38);
+	box-shadow: -36px -38px 0px #f5f5f5c9;
+	bottom: 10%;
+	left: 10%;
+	color: black;
+	background-color: whitesmoke;
+	border: 0.1em solid rgb(13 11 38);
 }
 
 .hero a {
-  color: black;
-  background-color: whitesmoke;
-  border: 0.1em solid rgb(13 11 38);
-  position: absolute;
-  width: 15ch;
-  top: 45%;
-  right: 5%;
+	color: black;
+	background-color: whitesmoke;
+	border: 0.1em solid rgb(13 11 38);
+	position: absolute;
+	width: 15ch;
+	top: 45%;
+	right: 5%;
 }
 
 header ul {
-  justify-content: flex-end;
-  max-width: 50%;
-  flex-wrap: wrap;
-  list-style: none;
+	justify-content: flex-end;
+	max-width: 50%;
+	flex-wrap: wrap;
+	list-style: none;
 }
 
 a,
 li {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
-header > div {
-  display: inherit;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-a {
-  color: white;
-  padding: 0.7em 1em;
-  border: solid 4px white;
-  border-radius: 7px;
-  background-color: rgb(134, 172, 137);
-}
-
-figcaption a {
-  width: fit-content;
-  display: block;
-  margin-top: 3%;
-  border: none;
-}
-
-@media (max-width: 600px) {
-  .menu-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #fffff4;
-    top: -100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    transform: scale(0);
-    z-index: 5;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .menu-container ul {
-    text-align: left;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .popup {
-    position: fixed;
-    top: 0;
-    font-size: 8vmin;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(50%);
-    right: 50%;
-  }
-
-  .menu-container ul a {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    margin-top: 1.25em;
-    transition: color 0.2s ease-in-out;
-    letter-spacing: 1px;
-  }
-
-  .menu-container li {
-    text-align: center;
-    font-size: 8vmin;
-  }
-
-  .greetings {
-    display: block;
-  }
-}
-
-#toggle {
-  display: none;
-}
-
-.hamburger {
-  position: absolute;
-  top: 81%;
-  right: 5%;
-  margin-left: -2em;
-  margin-top: -45px;
-  width: 2em;
-  height: 45px;
-  z-index: 5;
-}
-
-.hamburger div {
-  position: relative;
-  width: 3em;
-  height: 7px;
-  border-radius: 5px;
-  border: solid 1px black;
-  background-color: #fffff4;
-  margin-top: 8px;
-  transition: all 0.3s ease-in-out;
-}
-
-#toggle:checked + .hamburger .bar1 {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
-
-#toggle:checked + .hamburger .bar3 {
-  opacity: 0;
-  transform: rotate(45deg);
-}
-
-#toggle:checked + .hamburger .bar2 {
-  transform: rotate(45deg);
-  margin-top: -7px;
-}
-
-#toggle:checked .hamburger nav {
-  top: 0;
-  transform: scale(1);
+header>div {
+	display: inherit;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 [aria-label="Religious Education"] figure {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 
 [aria-label="Religious Education"] img {
-  width: 75%;
-  object-fit: contain;
+	width: 75%;
+	object-fit: contain;
 }
 
 [aria-label="Religious Education"] figcaption {
-  margin-top: 2em;
-  padding: 2em;
-  translate: -40%;
-  background-color: whitesmoke;
+	margin-top: 2em;
+	padding: 2em;
+	translate: -50%;
+	background-color: whitesmoke;
 }
 
-figcaption > p {
-  font-size: calc(1.2rem + 0.1vw);
-  width: 30vw;
-  font-weight: 300;
+figcaption>p {
+	font-size: calc(1.2rem + 0.1vw);
+	width: 40vw;
+	font-weight: 300;
 }
 
-figcaption > h2 {
-  font-weight: 500;
+figcaption>h2 {
+	font-weight: 500;
+}
+
+a {
+	color: white;
+	padding: 0.7em 1em;
+	border: solid 4px white;
+	border-radius: 7px;
+	background-color: rgb(134, 172, 137);
+}
+
+figcaption a {
+	width: fit-content;
+	display: block;
+	margin-top: 3%;
+	border: none;
+}
+
+@media (max-width: 600px) {
+	.menu-container {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #fffff4;
+		top: -100%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		transition: all 0.3s ease-in-out;
+		transform: scale(0);
+		z-index: 5;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	.menu-container ul {
+		text-align: left;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	[aria-label="Religious Education"] figure {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	[aria-label="Religious Education"] figcaption {
+		translate: none;
+	}
+
+	[aria-label="Religious Education"] figcaption>p {
+		width: 100%;
+	}
+
+	.popup {
+		position: fixed;
+		top: 0;
+		font-size: 8vmin;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(50%);
+		right: 50%;
+	}
+
+	.menu-container ul a {
+		position: relative;
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+		margin-top: 1.25em;
+		transition: color 0.2s ease-in-out;
+		letter-spacing: 1px;
+	}
+
+	.menu-container li {
+		text-align: center;
+		font-size: 8vmin;
+	}
+
+	.greetings {
+		display: block;
+	}
+}
+
+#toggle {
+	display: none;
+}
+
+.hamburger {
+	position: absolute;
+	top: 81%;
+	right: 5%;
+	margin-left: -2em;
+	margin-top: -45px;
+	width: 2em;
+	height: 45px;
+	z-index: 5;
+}
+
+.hamburger div {
+	position: relative;
+	width: 3em;
+	height: 7px;
+	border-radius: 5px;
+	border: solid 1px black;
+	background-color: #fffff4;
+	margin-top: 8px;
+	transition: all 0.3s ease-in-out;
+}
+
+#toggle:checked+.hamburger .bar1 {
+	transform: rotate(-45deg);
+	margin-top: 25px;
+}
+
+#toggle:checked+.hamburger .bar3 {
+	opacity: 0;
+	transform: rotate(45deg);
+}
+
+#toggle:checked+.hamburger .bar2 {
+	transform: rotate(45deg);
+	margin-top: -7px;
+}
+
+#toggle:checked .hamburger nav {
+	top: 0;
+	transform: scale(1);
 }
 
 section[aria-label="Weddings"] h2,
-figcaption > h2 {
-  font-size: calc(2.8vw + 1rem);
+figcaption>h2 {
+	font-size: calc(2.8vw + 1rem);
+}
+
+section[aria-label="Donating"] h3 {
+	font-size: calc(2vw + 1rem);
+	margin: 0.2em;
+}
+
+section[aria-label="Donating"] a {
+	display: inline-block;
+	margin-top: 5vh;
+}
+
+.slider-container {
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.slider {
+	display: flex;
+	width: 500%;
+	/* 100% * number of images */
+	animation: slide 25s infinite;
+}
+
+.slider img {
+	width: 20%;
+	/* 100% / number of images */
+	height: auto;
+	object-fit: cover;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+
+	20% {
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(-20%);
+	}
+
+	45% {
+		transform: translateX(-20%);
+	}
+
+	50% {
+		transform: translateX(-40%);
+	}
+
+	70% {
+		transform: translateX(-40%);
+	}
+
+	75% {
+		transform: translateX(-60%);
+	}
+
+	95% {
+		transform: translateX(-60%);
+	}
+
+	100% {
+		transform: translateX(-80%);
+	}
+}
+
+section[aria-label="Donating"] {
+	padding: 15vh;
+	color: whitesmoke;
+	text-align: center;
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/1597064973823-GM9H3VH8UZ2CA4E0YLFN/ryan-arnst--_ciMTKzBus-unsplash.jpg);
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 section[aria-label="Weddings"] h2 {
-  color: var(--accent-color);
-  text-align: center;
+	color: var(--accent-color);
+	text-align: center;
 }
 
 section[aria-label="Weddings"] a {
-  margin: 2% auto;
-  display: block;
-  width: fit-content;
+	margin: 2% auto;
+	display: block;
+	width: fit-content;
 }

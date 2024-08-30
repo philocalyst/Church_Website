@@ -2,122 +2,147 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A brief description of your webpage" />
-  <meta name="author" content="Your Name" />
-  <title>Index</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../substyles/religious_education.css" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="A brief description of your webpage" />
+	<meta name="author" content="Your Name" />
+	<title>Index</title>
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../substyles/religious_education.css" />
 
-  <script src="script.js" defer></script>
+	<script src="script.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>Unitarian Universalist Church of Savannah</h1>
-    <div>
-      <ul role="navigation">
-        <li>Menu</li>
-        <li>Upcoming Events</li>
-        <li>Calendar</li>
-        <li>Contact</li>
-      </ul>
-      <div aria-label="socials">
-        <img class="facebook" />
-        <img class="instagram" />
-      </div>
-      <a>Donate</a>
-    </div>
-  </header>
-  <section aria-label="intro">
-    <p>
-      We are proud of the warm and caring community of religious seekers that
-      we have created here at UU Church of Savannah. Our young people are free
-      to explore religious thoughts and values in an environment of mutual
-      kindness and respect. We offer a variety of classes and resources to
-      support each child's search for truth and meaning. Our religious
-      education (RE) program is headed by our Director of Religious Education,
-      Megan Dunkelberg, and is supported by our enthusiastic and dedicated
-      volunteers. Email Megan Dunkelberg at re@uusavannah.org with any
-      questions!
-    </p>
-    <p>
-      We offer year-round religious education (RE) for children ages 3 and up.
-      Our class is currently composed of all ages in one shared classroom,
-      which is located upstairs above our fellowship hall. We focus on
-      learning valuable life lessons through interactive stories, meditation,
-      arts and crafts, and games.
-    </p>
-    <p>
-      The current curriculum for RE class is adapted from our Soul Matters
-      material. The lessons have a new theme each month that aligns with our
-      worship service theme. We would love to have you!
-    </p>
-  </section>
-  <section aria-label="What we're about">
-    <h3>Nursery</h3>
-    <p>
-      Our nursery is now open for children from the ages of 6 months to 4
-      years. You are welcome to bring your child to the nursery prior to the
-      worship service or when the children are dismissed after the Story for
-      All Ages. Our nursery is located in our religious education spaces. We
-      will be happy to direct you there!
-    </p>
-    <h3>Worship</h3>
-    <p>
-      Periodically – often on special holidays – our children attend a full
-      worship service with the rest of the congregation. Enjoying a UU service
-      gives our children a firm grounding in what it means to be a part of the
-      larger congregation. It helps them prepare for the day when they are old
-      enough to stay in the service every week. It also allows the adults in
-      the congregation the pleasure of enjoying the enthusiasm and openness
-      only children can bring to a worship experience.
-    </p>
-    <img
-      src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/34414697-95f6-4db4-acf6-ebff1a49b4eb/nursery+2.png?format=1500w" />
-    <img
-      src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/bab6cdde-4139-429a-a37a-6ab59e79ddf6/UUCS+Choir+2.12.22.png?format=1500w" />
-    <h3>Service</h3>
-    <p>
-      Our children’s involvement in the life of the church goes beyond Sunday
-      morning. They participate in a number of social justice activities
-      throughout the year, such as collecting food items for the Backpack
-      Buddies program, engaging in Savannah Pride activities, marching in
-      Savannah’s annual Martin Luther King Day parade, and raising money for
-      the church by having a yearly book sale.
-    </p>
-    <img
-      src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/aa88cbe2-abec-437c-9687-bc878922d59a/IMG_7305.jpg?format=1500w" />
-    <img
-      src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/cc613bfa-8971-4a45-a6d5-cd6a8d1450f7/IMG_7309.jpg?format=1500w" />
-    <h3>Fun</h3>
-    <p>
-      Our children have fun! On periodic Fridays throughout the year we host a
-      Kids' Night Out, where young people enjoy an evening of arts and crafts,
-      games, and movies (and parents/guardians get to enjoy the evening on
-      their own). At other times they take field trips, celebrate holidays,
-      participate in music performances, and usually can be found after church
-      playing in the square.
-    </p>
-  </section>
-  <section aria-label="volunteer">
-    <h2>How to become a volunteer assistant</h2>
-    <img
-      src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/1594483794895-1WPYU5KK7TYA0YZZ67G9/101871482_10158137321901664_1773642026404359413_n.jpg?format=1500w" />
-    <p>
-      Our program is made possible by the wonderful, dedicated volunteer
-      assistants who donate their time and talents each week to our children.
-      Volunteers work alongside the DRE to help facilitate lessons, projects,
-      and crafts. All volunteers who regularly work with our children must
-      have a background check and agree to abide by our Code of Ethics for
-      Adults Working with Children and Youth.
-      <b>If you’d like to join our volunteer team, we’d love to have you!</b>
-      You do not need to be a parent to volunteer. Please email Megan to fill
-      out our RE Volunteer Registration form:
-      <a href="mailto:re@uusavannah.org">re@uusavannah.org</a>.
-    </p>
-  </section>
+	<header>
+		<h1>Unitarian Universalist Church of Savannah</h1>
+		<div class="menu-container">
+			<ul role="navigation">
+				<li id="menu">
+					Menu
+					<div class="popup">
+						<a href="subpages/leadership.html"> Leadership </a>
+
+						<a href="subpages/sunday_morning.html"> Sunday Morning </a>
+
+						<a href="subpages/upcoming_events.html"> Upcoming Events </a>
+
+						<a href="subpages/newsletter.html"> Newsletter </a>
+
+						<a href="subpages/religious_education.html">
+							Religious Education
+						</a>
+
+						<a href="subpages/make_a_difference.html"> Make a Difference </a>
+
+						<a href="subpages/weddings_and_rentals.html">
+							Weddings and Rentals
+						</a>
+
+						<a href="subpages/membersarea.html"> Members Area </a>
+
+						<a href="subpages/photogallery.html"> Photo Gallery </a>
+					</div>
+				</li>
+				<li>Upcoming Events</li>
+				<li>Calendar</li>
+				<li>Contact</li>
+			</ul>
+			<div aria-label="socials">
+				<img class="facebook" />
+				<img class="instagram" />
+			</div>
+			<a>Donate</a>
+		</div>
+	</header>
+	<section aria-label="intro">
+		<p>
+			We are proud of the warm and caring community of religious seekers that
+			we have created here at UU Church of Savannah. Our young people are free
+			to explore religious thoughts and values in an environment of mutual
+			kindness and respect. We offer a variety of classes and resources to
+			support each child's search for truth and meaning. Our religious
+			education (RE) program is headed by our Director of Religious Education,
+			Megan Dunkelberg, and is supported by our enthusiastic and dedicated
+			volunteers. Email Megan Dunkelberg at re@uusavannah.org with any
+			questions!
+		</p>
+		<p>
+			We offer year-round religious education (RE) for children ages 3 and up.
+			Our class is currently composed of all ages in one shared classroom,
+			which is located upstairs above our fellowship hall. We focus on
+			learning valuable life lessons through interactive stories, meditation,
+			arts and crafts, and games.
+		</p>
+		<p>
+			The current curriculum for RE class is adapted from our Soul Matters
+			material. The lessons have a new theme each month that aligns with our
+			worship service theme. We would love to have you!
+		</p>
+	</section>
+	<section aria-label="What we're about">
+		<h3>Nursery</h3>
+		<p>
+			Our nursery is now open for children from the ages of 6 months to 4
+			years. You are welcome to bring your child to the nursery prior to the
+			worship service or when the children are dismissed after the Story for
+			All Ages. Our nursery is located in our religious education spaces. We
+			will be happy to direct you there!
+		</p>
+		<h3>Worship</h3>
+		<p>
+			Periodically – often on special holidays – our children attend a full
+			worship service with the rest of the congregation. Enjoying a UU service
+			gives our children a firm grounding in what it means to be a part of the
+			larger congregation. It helps them prepare for the day when they are old
+			enough to stay in the service every week. It also allows the adults in
+			the congregation the pleasure of enjoying the enthusiasm and openness
+			only children can bring to a worship experience.
+		</p>
+		<img
+			src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/34414697-95f6-4db4-acf6-ebff1a49b4eb/nursery+2.png?format=1500w" />
+		<img
+			src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/bab6cdde-4139-429a-a37a-6ab59e79ddf6/UUCS+Choir+2.12.22.png?format=1500w" />
+		<h3>Service</h3>
+		<p>
+			Our children’s involvement in the life of the church goes beyond Sunday
+			morning. They participate in a number of social justice activities
+			throughout the year, such as collecting food items for the Backpack
+			Buddies program, engaging in Savannah Pride activities, marching in
+			Savannah’s annual Martin Luther King Day parade, and raising money for
+			the church by having a yearly book sale.
+		</p>
+		<img
+			src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/aa88cbe2-abec-437c-9687-bc878922d59a/IMG_7305.jpg?format=1500w" />
+		<img
+			src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/cc613bfa-8971-4a45-a6d5-cd6a8d1450f7/IMG_7309.jpg?format=1500w" />
+		<h3>Fun</h3>
+		<p>
+			Our children have fun! On periodic Fridays throughout the year we host a
+			Kids' Night Out, where young people enjoy an evening of arts and crafts,
+			games, and movies (and parents/guardians get to enjoy the evening on
+			their own). At other times they take field trips, celebrate holidays,
+			participate in music performances, and usually can be found after church
+			playing in the square.
+		</p>
+	</section>
+	<section aria-label="volunteer">
+		<h2>How to become a volunteer assistant</h2>
+		<img
+			src="https://images.squarespace-cdn.com/content/v1/5f063b83528ffa6e58bce7e4/1594483794895-1WPYU5KK7TYA0YZZ67G9/101871482_10158137321901664_1773642026404359413_n.jpg?format=1500w" />
+		<p>
+			Our program is made possible by the wonderful, dedicated volunteer
+			assistants who donate their time and talents each week to our children.
+			Volunteers work alongside the DRE to help facilitate lessons, projects,
+			and crafts. All volunteers who regularly work with our children must
+			have a background check and agree to abide by our Code of Ethics for
+			Adults Working with Children and Youth.
+			<b>If you’d like to join our volunteer team, we’d love to have you!</b>
+			You do not need to be a parent to volunteer. Please email Megan to fill
+			out our RE Volunteer Registration form:
+			<a href="mailto:re@uusavannah.org">re@uusavannah.org</a>.
+		</p>
+	</section>
 </body>
 
 </html>

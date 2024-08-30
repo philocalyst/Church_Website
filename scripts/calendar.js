@@ -72,6 +72,34 @@ function main() {
     }
     getCalendar.appendChild(square);
   }
+  // Select all elements with the class 'day'
+  const dayElements = document.querySelectorAll(".day");
+  console.log(dayElements.item[1]);
+
+  // Function to handle mouse enter (hover start)
+  function handleMouseEnter(event) {
+    const day = event.target;
+    day.style.backgroundColor = "#e8f4fa";
+  }
+
+  // Function to handle mouse leave (hover end)
+  function handleMouseLeave(event) {
+    const day = event.target;
+    if (day.id !== "currentDay") day.style.backgroundColor = "#fffcff";
+  }
+
+  // Add event listeners to each 'day' element
+  dayElements.forEach((day) => {
+    day.addEventListener("mouseenter", handleMouseEnter);
+    day.addEventListener("mouseleave", handleMouseLeave);
+  });
+
+  // let preview_header = document.querySelector("#preview > h3");
+  // let preview_body = document.querySelector("#preview > p");
+
+  // Append text to existing content
+  //preview_header.textContent += "Love on the Loose";
+  //preview_body.textContent += "~" + "  Sunday, September 1, 11:00 am";
 }
 
 nextButton();
